@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- This is the base Inner View inside a CardHeader.
+         You can customize it with your layout xml file and your CardHeader.
+         You can popolate your element with CardHeader#setupInnerViewElements() method -->
+
+    <!--<TextView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="#FFFF"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:padding="15dp"-->
+    <!--android:textSize="15sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:id="@+id/text_exmple_card1"-->
+    <!--android:text="Medicines"-->
+    <!--/>-->
+
+    <RelativeLayout
+        android:id="@id/take_dialog_title_wrap"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="16.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingRight="16.0dip"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingBottom="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip">
+
+        <ImageView
+            android:id="@id/take_dialog_pill_background"
+            android:background="@drawable/bg_shape_circle"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/antibiotic_512" />
+
+        <!--<ImageView-->
+        <!--android:id="@id/take_dialog_pill"-->
+        <!--android:layout_width="24.0dip"-->
+        <!--android:layout_height="24.0dip"-->
+        <!--android:layout_marginLeft="8.0dip"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/man_doctor_black"/>-->
+
+        <ImageView
+            android:id="@id/take_dialog_btn_edit"
+            android:padding="8.0dip"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginRight="-8.0dip"
+            android:src="@drawable/ic_overflow_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="47.0dp"
+            android:layout_toLeftOf="@id/take_dialog_btn_edit"
+            android:layout_toRightOf="@id/take_dialog_pill_background"
+            android:layout_centerVertical="true">
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:textColor="@color/sgColorWhite"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:id="@+id/text_exmple_card1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:text="Medicines"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                app:fontFamily="roboto"
+                app:textWeight="medium"
+                style="@style/sgTextTitle" />
+
+            <TextView
+                android:textColor="@color/sgColorWhite"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:id="@id/take_dialog_pill_dosage"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:text="100 mg"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                style="@style/sgTextBody1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

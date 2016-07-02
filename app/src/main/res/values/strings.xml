@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PrescriptionFormNew</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod blandit turpis, a feugiat dui lobortis iaculis. Sed vitae dapibus lacus. Ut eu volutpat ipsum, quis venenatis tellus. Nam condimentum, arcu nec eleifend semper, leo tortor vulputate tortor, at tristique ex erat at augue.</string>
+
+    <string name="medicine_name_hint"><font size="15">type medicine name</font></string>
+    <string name="diagnosis_hint"><font size="15">your diagnosis here</font></string>
+    <string name="patient_name"><font size="15">Anil Zacharia</font></string>
+
+</resources>
